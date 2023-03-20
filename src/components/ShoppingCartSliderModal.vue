@@ -104,7 +104,7 @@ export default {
               adress: this.adress,
               quantity: this.product.quantity,
             })
-            this.isOrderComplete = true;
+            this.isOrderComplete = false;
             
           } catch(error) {
             console.log({error})
