@@ -89,6 +89,7 @@ export default {
             localStorage.setItem('product',JSON.stringify(product))
             this.product = JSON.parse(localStorage.getItem('product'));
             document.getElementsByTagName('body')[0].classList.add('stop-scrolling')
+            this.isOrderComplete = true;
         });
   },
   methods:{
