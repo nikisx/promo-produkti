@@ -83,7 +83,7 @@
                 <div>
                     <ul style="width: 100%;" class="pens-description">
                         <li> <i style="font-size: 30px;margin-right: 6px;" class="fa fa-check-circle-o" aria-hidden="true"></i>Флумастерите са нови и иновативни!</li>
-                        <li> <i style="font-size: 30px;margin-right: 6px;" class="fa fa-check-circle-o" aria-hidden="true"></i>В комплетка влизат 12 боря флумастери и лъжичка!</li>
+                        <li> <i style="font-size: 30px;margin-right: 6px;" class="fa fa-check-circle-o" aria-hidden="true"></i>В комплетка влизат 11 боря флумастери и лъжичка!</li>
                         <li><i style="font-size: 30px;margin-right: 6px;" class="fa fa-check-circle-o" aria-hidden="true"></i>Рисунките плават!</li>
                         <li><i style="font-size: 30px;margin-right: 6px;" class="fa fa-check-circle-o" aria-hidden="true"></i>Подходящо за деца от 2 години нагоре!</li>
                         <li><i style="font-size: 30px;margin-right: 6px;" class="fa fa-check-circle-o" aria-hidden="true"></i>Може да ги превърнтете в татуировка!</li>
@@ -131,7 +131,7 @@
 export default {
     methods:{
         toggleSidebar() {
-         this.emitter.emit("toggle-sidebar", {title: 'Магически флуместери - 12бр + лъжичка', quantity: 1, price: 24.99, image: 'Pens-thumbnail.png'});
+         this.emitter.emit("toggle-sidebar", {title: 'Магически флуместери - 11бр + лъжичка', quantity: 1, price: 24.99, image: 'Pens-thumbnail.png'});
     }
     }
 }

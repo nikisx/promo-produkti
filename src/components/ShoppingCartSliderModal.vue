@@ -5,10 +5,10 @@
     <h1 style="font-size: 50px">Поръчка</h1>
     <hr>
     <div v-if="product" style="">
-      <div style="text-align: left; display: flex; gap: 10px;align-items: start;">
+      <div style="text-align: left; display: flex; gap: 10px;align-items: start;padding: 10px;">
         <img style="width: 100px;" :src="productImage" alt="">
         <div>
-          <p style="width: 65vw;font-size: 23px;margin-bottom: 10px;">{{ product.title }}</p>
+          <p style="width: 100%;font-size: 23px;margin-bottom: 10px;">{{ product.title }}</p>
           <p style="font-size: 20px;margin-bottom: 10px;"><b>ЦЕНА:</b>{{ product.price }} лв.</p>
           <p style="font-size: 20px;margin-bottom: 10px;"><b>БРОЙ:</b>{{ product.quantity }} бр.</p> 
           <p @click="addQuantitiy()" class="add-btn">Добави още 1 брой</p>
@@ -16,7 +16,11 @@
         </div>
       </div>
     </div>
-    <div style="margin-top: 50px;">
+    <div>
+      <p style="font-size: 25px;">Крайна цена: {{ calculatedFinalPrice.toFixed(2) }} лв. <span v-if="product && product.quantity > 1">(- 25%)</span></p>
+      <p v-if="product && product.quantity > 1" style="font-size: 20px;">БЕЗПЛАТНА доставка</p>
+    </div>
+    <div v-if="!isOrderComplete" style="margin-top: 50px;">
       <p style="font-size: 30px">Данни за поръчка</p>
       <form @submit.prevent="sendOrder()" style="width: 89%;margin: 0 auto;margin-top: 30px;display: flex;flex-direction: column;">
         <b style="text-align: left;" for="">Имена</b>
@@ -30,6 +34,11 @@
         <button class="add-btn" style="font-size: 25px; background-color: #f4ad43; margin: 0 auto;">Поръчай</button>
       </form>
     </div>
+    <div v-else style="margin-top: 50px;">
+      <p style="font-size: 30px">Успешна поръчка!</p>
+      <i style="font-size: 80px;margin-right: 6px;color: green;" class="fa fa-check-circle-o" aria-hidden="true"></i>
+      <p style="font-size: 30px">Благодарим ви за поръчката!</p>
+    </div>
   </section>
 </template>
 
@@ -40,6 +49,7 @@ export default {
   data(){
     return {
       isActive: false,
+      isOrderComplete: false,
       product: null,
       name: null,
       phone: null,
@@ -53,6 +63,16 @@ export default {
     },
     productImage(){
       return require('../assets/images/' + this.product?.image)
+    },
+    calculatedFinalPrice(){
+      if (this.product?.quantity > 1) {
+        const temp = this.product.price * this.product.quantity;
+        
+
+        return temp - (temp * 0.25)
+      }
+
+      return this.product?.price ?? 0;
     }
     // product(){
     //   return JSON.parse(localStorage.getItem('product'))
@@ -83,6 +103,7 @@ export default {
               adress: this.adress,
               quantity: this.product.quantity,
             })
+            this.isOrderComplete = true;
             
           } catch(error) {
             console.log({error})
