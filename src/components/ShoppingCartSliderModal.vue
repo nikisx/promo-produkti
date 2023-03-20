@@ -89,7 +89,7 @@ export default {
             localStorage.setItem('product',JSON.stringify(product))
             this.product = JSON.parse(localStorage.getItem('product'));
             document.getElementsByTagName('body')[0].classList.add('stop-scrolling')
-            this.isOrderComplete = true;
+            this.isOrderComplete = false;
         });
   },
   methods:{
@@ -104,7 +104,7 @@ export default {
               adress: this.adress,
               quantity: this.product.quantity,
             })
-            this.isOrderComplete = false;
+            this.isOrderComplete = true;
             
           } catch(error) {
             console.log({error})
