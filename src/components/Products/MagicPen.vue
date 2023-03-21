@@ -129,8 +129,12 @@
 
 <script>
 export default {
+    create(){
+        window.fbq('pageOpen', 'magic-pen')
+    },
     methods:{
         toggleSidebar() {
+        window.fbq('trackCart', 'openCart')
          this.emitter.emit("toggle-sidebar", {title: 'Магически флуместери - 11бр + лъжичка', quantity: 1, price: 24.99, image: 'Pens-thumbnail.png'});
     }
     }
