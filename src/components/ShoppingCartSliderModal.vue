@@ -11,8 +11,8 @@
           <p style="width: 100%;font-size: 23px;margin-bottom: 10px;">{{ product.title }}</p>
           <p style="font-size: 20px;margin-bottom: 10px;"><b>ЦЕНА:</b>{{ product.price }} лв.</p>
           <p style="font-size: 20px;margin-bottom: 10px;"><b>БРОЙ:</b>{{ product.quantity }} бр.</p> 
-          <p @click="addQuantitiy()" class="add-btn">Добави още 1 брой</p>
-          <p v-if="product.quantity > 1" @click="decreaseQuanity()" style="background: red;margin-left: 4px;" class="add-btn">Премахни 1 брой</p>
+          <p v-if="!isOrderComplete" @click="addQuantitiy()" class="add-btn">Добави още 1 брой</p>
+          <p v-if="product.quantity > 1 && !isOrderComplete" @click="decreaseQuanity()" style="background: red;margin-left: 4px;" class="add-btn">Премахни 1 брой</p>
         </div>
       </div>
     </div>

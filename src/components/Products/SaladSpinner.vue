@@ -129,7 +129,7 @@
 <script>
 export default {
     created(){
-        window.fbq('pageOpen', 'spinner')
+        window.fbq('track', 'ViewContent')
     },
     mounted(){
         var coll = document.getElementsByClassName("collapsible");
@@ -149,7 +149,7 @@ export default {
     },
     methods:{
         toggleSidebar() {
-        window.fbq('trackCart', 'openCart')
+        window.fbq('track', 'AddToCart')
          this.emitter.emit("toggle-sidebar", {title: 'Иновативна центрофуга - Spino', quantity: 1, price: 34, image: 'центрофуга.png'});
     }
     }
