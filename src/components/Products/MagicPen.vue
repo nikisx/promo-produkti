@@ -147,7 +147,7 @@ export default {
 }
 .pens-description{
     text-align: left;
-    width: 55%;
+    
     margin: 0 auto;
     font-size: 20px;
     margin-top: 20px;

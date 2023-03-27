@@ -6,6 +6,7 @@ import AboutPage from './components/AboutPage.vue';
 import ProductsPage from './components/ProductsPage.vue';
 import ContactsPage from './components/ContactsPage.vue';
 import MagicPen from './components/Products/MagicPen.vue';
+import SaladSpinner from './components/Products/SaladSpinner.vue';
 import mitt from 'mitt';
 
 const routes = [
@@ -33,6 +34,11 @@ const routes = [
 		path: '/products/magic-pen',
 		name: 'magic-pen',
 		component: MagicPen,
+	},
+	{
+		path: '/products/salad-spinner',
+		name: 'salad-spinner',
+		component: SaladSpinner,
 	},
 ];
 

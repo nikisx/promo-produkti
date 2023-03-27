@@ -17,7 +17,7 @@
       </div>
     </div>
     <div>
-      <p style="font-size: 25px;">Крайна цена: {{ calculatedFinalPrice.toFixed(2) }} лв. <span v-if="product && product.quantity > 1">(- 25%)</span></p>
+      <p style="font-size: 25px;">Крайна цена: {{ calculatedFinalPrice.toFixed(2) }} лв. <span v-if="product && product.quantity > 1">(- 20%)</span></p>
       <p v-if="product && product.quantity > 1" style="font-size: 20px;">БЕЗПЛАТНА доставка</p>
     </div>
     <div v-if="!isOrderComplete" style="margin-top: 50px;">
@@ -69,7 +69,7 @@ export default {
         const temp = this.product.price * this.product.quantity;
         
 
-        return temp - (temp * 0.25)
+        return temp - (temp * 0.20)
       }
 
       return this.product?.price ?? 0;
