@@ -26,7 +26,7 @@
                     </div>
         </div>
         <header>
-            <h1 class="header-text">Новият и иновативен начин да улесните работата в кухнята!</h1>
+            <h1 class="header-text">Новият и иновативен начин за улесние на работата в кухнята!</h1>
             <img src="../../assets/images/5066001d-e58a-4e13-905c-ba4309326460.__CR0,0,1940,1200_PT0_SX970_V1___.jpg"/>
             <button @click="toggleSidebar()" style="display: block;margin: 0 auto;margin-top: 50px;" class="gf_button"> ИСКАМ ДА ПОРЪЧАМ!</button>
         </header>
