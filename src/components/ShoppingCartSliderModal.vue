@@ -82,7 +82,6 @@ export default {
        emailjs.init('FvTvghX64N2H7swm9');
    },
     mounted() { 
-      document.title = 'Перфектния подарък за деца само за 24.99 лв.'
         this.emitter.on("toggle-sidebar", (product) => {
             document.getElementById('shopping-cart').style.right = 0;
             this.isActive = true;

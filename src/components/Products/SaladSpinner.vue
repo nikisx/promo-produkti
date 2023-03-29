@@ -88,8 +88,8 @@
             <button @click="toggleSidebar()" style="display: block;margin: 0 auto;margin-top: 50px;" class="gf_button"> ИСКАМ ДА ПОРЪЧАМ!</button>
         </section>
         <section style="padding: 20px">
-            <p style="font-size: 35px; font-weight: bold;line-height: 32px;">Поради ограничени количества цената на нашия Spino е намалена с 30%</p>
-            <p style="font-size: 30px; font-weight: bold;line-height: 32px;">Цена: <span style="text-decoration: line-through">44лв</span> <span>34 лв</span></p>
+            <p style="font-size: 35px; font-weight: bold;line-height: 32px;">Поради ограничени количества цената на нашия Spino е намалена с 50%</p>
+            <p style="font-size: 30px; font-weight: bold;line-height: 32px;">Цена: <span style="text-decoration: line-through">68 лв</span> <span>34 лв</span></p>
         </section>
         <section>
                 <h1 style="font-size: 35px;color: #f2c119;font-weight: bold;">Защо да ни се доверите:</h1>
