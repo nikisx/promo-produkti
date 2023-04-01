@@ -104,7 +104,7 @@ export default {
               quantity: this.product.quantity,
             })
             this.isOrderComplete = true;
-            
+            window.fbq('track', 'Purchase', {value: this.calculatedFinalPrice, currency: 'USD'});
           } catch(error) {
             console.log({error})
           }

@@ -8,7 +8,7 @@
                            <li><a href="#" class="mobile-font-size"><img src="../../assets/images/call.png" alt="#"/>Бърза поръчка на: 0879277894</a> </li>
                         </ul>
                      </div>
-                     <p style="font-size: 20px;" class="mobile-font-size">При поръчки над 1 брой получавате БЕЗПЛАТНА доставка и 25% намаление</p>
+                     <p style="font-size: 20px;" class="mobile-font-size">При поръчки над 1 брой получавате БЕЗПЛАТНА доставка и 20% намаление</p>
                      <div >
                         <ul class="social_icon">
                            <li> <a href="https://www.facebook.com/prodavalniktopceni" target="_blanc"><i class="fa fa-facebook" aria-hidden="true"></i>
@@ -93,9 +93,35 @@
                     <button @click="toggleSidebar()" class="gf_button"> ИСКАМ ДА ПОРЪЧАМ!</button>
                 </div>
             </section>
+            <section style="background: #b7e449;margin-top: 40px;padding: 30px;">
+            <h2 style="font-weight: bold; font-size: 30px; color: white;">Често задавани въпроси</h2>
+            <div class="faq">
+                <button class="collapsible">Как се прехвърля от водата върху кожата?</button>
+                <div class="content" >
+                <p style="font-size: 20px;padding: 20px;">Изрежете празно парче хартия, поставете хартията върху рисунката и я оставете да се прехвърли върху хартията! След това го залепете на ръката си за забавен ефект на временна татуировка! Децата ще се радват на това!</p>
+                </div>
+                <button class="collapsible">За каква възраст е подходящ този продукт?</button>
+                <div class="content" >
+                <p style="font-size: 20px;padding: 20px;">Нашите магически флумастери са подходящи за деца на възраст над 2 години. Децата просто обичат да рисуват върху всичко! Така че, ако им подарите нашите магически флумастери, те ще бъдат толкова развълнувани да ги изпробват!</p>
+                </div>
+                <button class="collapsible">Какъв вид вода ми е необходима?</button>
+                <div class="content" >
+                <p style="font-size: 20px;padding: 20px;">Можете да използвате абсолютно всякаква вода! Препоръчваме вода със стайна температура от обикновена чешмяна вода.</p>
+                </div>
+                <button class="collapsible">Какви чинии/чаши мога да използвам?</button>
+                <div class="content" >
+                <p style="font-size: 20px;padding: 20px;">Препоръчваме ви да използвате наистина дълбока и широка купа (а не чиния) у дома или просто да се насладите на нея във ваната заедно с малчуганите! Просто се уверете, че лъжичките са сухи, преди да рисувате върху тях.</p>
+                </div>
+            </div>
+            <button @click="toggleSidebar()" style="display: block;margin: 0 auto;margin-top: 50px;" class="gf_button"> ИСКАМ ДА ПОРЪЧАМ!</button>
+        </section>
+        <section style="padding: 20px">
+            <p style="font-size: 35px; font-weight: bold;line-height: 32px;">Поради ограничени количества цената на нашите флумастери е намалена с 50%</p>
+            <p style="font-size: 30px; font-weight: bold;line-height: 32px;">Цена: <span style="text-decoration: line-through">56 лв</span> <span>27.99 лв</span></p>
+        </section>
             <section>
                 <h1 style="font-size: 35px;color: #f2c119;font-weight: bold;">Защо да ни се доверите:</h1>
-
+                <h2>Поръчвайки сега вие не поемате никакъв риск, защото сме толкова сигурни, че ще харесате нашия продукт, че предлагаме 100% гаранция за връщане на парите. Ако по някаква причина не сте напълно удовлетворени от покупката си, просто ни уведомете в рамките на 60 дни и ние ще ви възстановим цялата сума.</h2>
                 <img src="../../assets/images/kachestvo_.jpg" alt="">
 
                     <!-- three_box section -->
@@ -129,13 +155,29 @@
 
 <script>
 export default {
-    create(){
-        window.fbq('pageOpen', 'magic-pen')
+    created(){
+        window.fbq('track', 'ViewContent')
+    },
+    mounted(){
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+        
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight){
+                    content.style.maxHeight = null;
+                } else {
+                    content.style.maxHeight = content.scrollHeight + 20 + "px";
+                } 
+            });
+        }
     },
     methods:{
         toggleSidebar() {
-        window.fbq('trackCart', 'openCart')
-         this.emitter.emit("toggle-sidebar", {title: 'Магически флуместери - 11бр + лъжичка', quantity: 1, price: 24.99, image: 'Pens-thumbnail.png'});
+        window.fbq('track', 'AddToCart')
+         this.emitter.emit("toggle-sidebar", {title: 'Магически флуместери - 11бр + лъжичка', quantity: 1, price: 27.99, image: 'Pens-thumbnail.png'});
     }
     }
 }
