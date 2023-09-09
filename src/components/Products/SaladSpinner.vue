@@ -1,35 +1,47 @@
 <template>
     <section style="font-family: 'Raleway', sans-serif;">
-        <div style="position: fixed;top: 0;width: 100vw;z-index: 100;" class="header_top d_none1">
-                    <div class="container" style="max-width: unset;">
+        <header class="header_background">
+                    <!--<div class="container" style="max-width: unset;">
                        <div class="promo-header">
                           <div class="">
                              <ul class="conta_icon ">
                                 <li><a href="#" class="mobile-font-size"><img src="../../assets/images/call.png" alt="#"/>Бърза поръчка на: 0879277894</a> </li>
                              </ul>
-                          </div>
-                          <p style="font-size: 20px;" class="mobile-font-size">При поръчки над 1 брой получавате БЕЗПЛАТНА доставка и 20% намаление</p>
-                          <div >
+                          </div>-->
+                          <p style="font-size: 20px;" class="mobile-font-size free_shipping">БЕЗПЛАТНА ДОСТАВКА ПРИ ПОРЪЧКИ НАД 59.99 ЛВ.</p>
+                          <!-- <div >
                              <ul class="social_icon">
                                 <li> <a href="https://www.facebook.com/prodavalniktopceni" target="_blanc"><i class="fa fa-facebook" aria-hidden="true"></i>
                                    </a>
                                 </li>
-                                <!-- <li> <a href="#"><i class="fa fa-twitter"></i></a></li>
+                                old comment <li> <a href="#"><i class="fa fa-twitter"></i></a></li>
                                 <li> <a href="#"> <i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
                                 <li> <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i>
                                    </a>
-                                </li> -->
+                                </li> end of old comment
                              </ul>
                           </div>
                          
                        </div>
-                    </div>
-        </div>
-        <header>
+                    </div>-->
+        </header>
+        <section class="nav_section">
+            <nav>
+                <ul>
+                    <li>Начало</li>
+                    <li>Контакти</li>
+                </ul>
+            </nav>
+            <img class="shop_name" src="../../assets/images/shop_name.png" />
+            <button class="shopping_cart">
+                <img src="../../assets/images/shoping_cart.png" />
+            </button>
+        </section>
+        <div>
             <h1 class="header-text">Новият и иновативен начин за улесние на работата в кухнята!</h1>
             <img src="../../assets/images/5066001d-e58a-4e13-905c-ba4309326460.__CR0,0,1940,1200_PT0_SX970_V1___.jpg"/>
             <button @click="toggleSidebar()" style="display: block;margin: 0 auto;margin-top: 50px;" class="gf_button"> ИСКАМ ДА ПОРЪЧАМ!</button>
-        </header>
+        </div>
         <section class="description">
             <img src="../../assets/images/центрофуга.png" style="border-radius: 10px" alt="">
             <div>
@@ -158,6 +170,7 @@ export default {
 
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
   .header-text{
     margin-top: 60px;
@@ -235,6 +248,28 @@ export default {
     width: 50%;
     margin: 0 auto;
   }
+
+.free_shipping{
+   font-family: 'Poppins, sans-serif' !important;
+   font-weight: 700;
+   color: white;
+}
+
+.header_background{
+    background-color: black;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 100;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.nav_section{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+}
 
   @media (max-width: 768px) {
     .header-text{
