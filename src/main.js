@@ -7,6 +7,8 @@ import ProductsPage from './components/ProductsPage.vue';
 import ContactsPage from './components/ContactsPage.vue';
 import MagicPen from './components/Products/MagicPen.vue';
 import SaladSpinner from './components/Products/SaladSpinner.vue';
+import ProgBook from './components/Products/ProgrammingBook.vue';
+
 import mitt from 'mitt';
 
 const routes = [
@@ -39,6 +41,11 @@ const routes = [
 		path: '/products/salad-spinner',
 		name: 'salad-spinner',
 		component: SaladSpinner,
+	},
+	{
+		path: '/products/mladyat-programist',
+		name: 'prog-book',
+		component: ProgBook,
 	},
 ];
 
