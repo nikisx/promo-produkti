@@ -37,11 +37,16 @@
                           <li style="display: flex;gap: 5px;margin-bottom: 10px;"><i style="font-size: 30px;margin-right: 6px;color: green;margin-left: 6px;" class="fa fa-check-circle-o" aria-hidden="true"></i><p style="font-size:18px;">Дава Ви свободно време като родители!</p></li>
                       </ul>
                   </div>
+              <hr style="height: 5px;background: white;width: 85%;">
                   <div class="wd-50">
-                      <h1 style="font-style: italic;color: rgb(8, 83, 149);">Програмиране за деца Забавление и обучение в едно!</h1>
-                      <img style="    border-radius: 170px;" src="../../assets/images/happy-little-girl-holding-a-book-mockup-at-the-library-a19273.jpg" alt=""/>
+                      <h1 style="color: rgb(8, 83, 149); font-family: cursive; font-weight: bold;">Програмиране за деца Забавление и обучение в едно!</h1>
+                      <img style="border-radius: 170px;" src="../../assets/images/happy-little-girl-holding-a-book-mockup-at-the-library-a19273.jpg" alt=""/>
                       <p style="font-size: 20px; margin-top: 2rem;"> Представете си света, където вашето дете не само използва технологиите, но и ги създава! <br> Нашата книга
                          <b>"Младият програмист"</b> е ключът към това вълнуващо пътешествие.</p>
+                      <section style="margin-top:50px;">
+                        <p style="font-size: 35px; font-weight: bold;line-height: 32px;"><span STYLE="color:red;">50%</span> НАМАЛЕНИЕ</p>
+                        <p style="font-size: 30px; font-weight: bold;line-height: 32px; margin-top: 10px;"><span style="text-decoration: line-through">56 лв</span> <span style="color:red;">27.99 лв</span></p>
+                      </section>
                       <button @click="toggleSidebar()" class="gf_button"> ПОРЪЧАЙ СЕГА!</button>
                   </div>
               </section>
@@ -59,52 +64,57 @@
               </section>
               <section class="flex" style="background: #fbf4e9!important; justify-content: space-evenly;padding: 35px 0">
                   <div>
-                      <h2 style="font-size: 25px;font-weight: bold;">ЗАЩО ТРЯБВА ДА ГО ИМАТЕ?</h2>
-                      <img src="../../assets/images/Magic_Painting_Pens_2_480x480.webp" alt="">
+                    <h1 style="font-weight: bold; color:rgb(8, 83, 149)">Защо да поръчате ?</h1>
+                    <hr style="height:5px;background:white;width:85%;">
+                    <p style="color: #2c3e50;font-size: 20px;font-weight: bold;width: 90%;margin: 0 auto;margin-top: 15px; margin-bottom: 15px;">
+                        Защото <b>ВИЕ</b> сте тези, които ще изградят <b>бъдещото</b> на Вашето дете. Нашата книга е идеалният <b>подарък</b>, който ще даде на детето Ви нови <b>знания</b> и <b>възможности</b>.
+                     </p>
+                      <img style="border-radius:25px;" src="../../assets/images/parenthood.jpg" alt="">
                   </div>
                   <div>
-                      <ul style="width: 100%;" class="pens-description">
-                        <li><i style="font-size: 30px;margin-right: 6px;" class="fa fa-check-circle-o" aria-hidden="true"></i>Подготовка за бъдещето: Инвестиция в знания за добре платена бъдеща кариера.</li>
-                          <li> <i style="font-size: 30px;margin-right: 6px;" class="fa fa-check-circle-o" aria-hidden="true"></i>Лесно обучение: Ясни инструкции, подходящи за деца.</li>
-                          <li> <i style="font-size: 30px;margin-right: 6px;" class="fa fa-check-circle-o" aria-hidden="true"></i>Практични упражнения: Упражнения и проекти за практика.</li>
-                          <li><i style="font-size: 30px;margin-right: 6px;" class="fa fa-check-circle-o" aria-hidden="true"></i>Основни технологии: Усвояване на HTML, CSS и JavaScript.</li>
-                          <li><i style="font-size: 30px;margin-right: 6px;" class="fa fa-check-circle-o" aria-hidden="true"></i>Логическо мислене: Развитие на критично мислене.</li>
-                          <li><i style="font-size: 30px;margin-right: 6px;" class="fa fa-check-circle-o" aria-hidden="true"></i>Креативност: Възможност за създаване на уникални уеб страници.</li>
-                      </ul> 
-                      <p class="risk-free-text">Пробвайте за <span style="color: rgb(232, 78, 7)">60 дни</span> без риск!Гаранция за връщане на парите</p>
-                      <button @click="toggleSidebar()" class="gf_button"> ПОРЪЧАЙ СЕГА!</button>
+                    <p class="risk-free-text">Пробвайте за <span style="color: rgb(232, 78, 7)">30 дни</span> без риск!Гаранция за връщане на парите</p>
+                    <button @click="toggleSidebar()" class="gf_button"> ПОРЪЧАЙ СЕГА!</button>
                   </div>
               </section>
-              <section style="background: #b7e449;margin-top: 40px;padding: 30px;">
+              <section style="background: #b7e449;padding: 30px;">
               <h2 style="font-weight: bold; font-size: 30px; color: white;">Често задавани въпроси</h2>
               <div class="faq">
-                  <button class="collapsible">Как се прехвърля от водата върху кожата?</button>
+                  <button class="collapsible">За каква възраст е подходяща книгата?</button>
                   <div class="content" >
-                  <p style="font-size: 20px;padding: 20px;">Изрежете празно парче хартия, поставете хартията върху рисунката и я оставете да се прехвърли върху хартията! След това го залепете на ръката си за забавен ефект на временна татуировка! Децата ще се радват на това!</p>
+                  <p style="font-size: 20px;padding: 20px;">Книгата е предназначена за деца на възраст от 7 до 15 години, но е подходящо за хора на всякаква възраст, които искат да научат основите на програмирането!</p>
                   </div>
-                  <button class="collapsible">За каква възраст е подходящ този продукт?</button>
+                  <button class="collapsible">Има ли нужда от предишни познания за програмиране?</button>
                   <div class="content" >
-                  <p style="font-size: 20px;padding: 20px;">Нашите магически флумастери са подходящи за деца на възраст над 2 години. Децата просто обичат да рисуват върху всичко! Така че, ако им подарите нашите магически флумастери, те ще бъдат толкова развълнувани да ги изпробват!</p>
+                  <p style="font-size: 20px;padding: 20px;">Не, книгата е подходяща за начинаещи и не изисква предишни познания за програмиране!</p>
                   </div>
-                  <button class="collapsible">Какъв вид вода ми е необходима?</button>
+                  <button class="collapsible">Каква информация ще науча от книгата?</button>
                   <div class="content" >
-                  <p style="font-size: 20px;padding: 20px;">Можете да използвате абсолютно всякаква вода! Препоръчваме вода със стайна температура от обикновена чешмяна вода.</p>
+                  <p style="font-size: 20px;padding: 20px;">Ще научите основите на HTML, CSS и JavaScript, както и как да създавате свои собствени уеб страници.</p>
                   </div>
-                  <button class="collapsible">Какви чинии/чаши мога да използвам?</button>
+                  <button class="collapsible">Има ли упражнения и проекти за практика?</button>
                   <div class="content" >
-                  <p style="font-size: 20px;padding: 20px;">Препоръчваме ви да използвате наистина дълбока и широка купа (а не чиния) у дома или просто да се насладите на нея във ваната заедно с малчуганите! Просто се уверете, че лъжичките са сухи, преди да рисувате върху тях.</p>
+                  <p style="font-size: 20px;padding: 20px;">Да, книгата включва разнообразни упражнения и проекти, които позволяват на децата да приложат наученото на практика.</p>
+                  </div>
+                  <button class="collapsible">Какви са предимствата на ученето на програмиране в ранна възраст?</button>
+                  <div class="content" >
+                  <p style="font-size: 20px;padding: 20px;">Ученето на програмиране в ранна възраст помага за развитието на логическото мислене, креативността и проблемното решаване, като същевременно подготвя децата за бъдещи кариерни възможности.</p>
+                  </div>
+                  <button class="collapsible">Има ли възможност за самостоятелно обучение?</button>
+                  <div class="content" >
+                  <p style="font-size: 20px;padding: 20px;">Да, книгата е подходяща както за самостоятелно обучение, така и за работа с родители или учители.</p>
                   </div>
               </div>
-              <button @click="toggleSidebar()" style="display: block;margin: 0 auto;margin-top: 50px;" class="gf_button"> ПОРЪЧАЙ СЕГА!</button>
           </section>
-          <section style="padding: 20px">
-              <p style="font-size: 35px; font-weight: bold;line-height: 32px;">Поради ограничени количества цената на нашите флумастери е намалена с 50%</p>
-              <p style="font-size: 30px; font-weight: bold;line-height: 32px;">Цена: <span style="text-decoration: line-through">56 лв</span> <span>27.99 лв</span></p>
-          </section>
+          <section style="padding: 20px; padding-bottom:0">
+              <p style="font-size: 35px; font-weight: bold;line-height: 32px;"><span STYLE="color:red;">50%</span> НАМАЛЕНИЕ</p>
+              <p style="font-size: 30px; font-weight: bold;line-height: 32px; margin-top: 10px;"><span style="text-decoration: line-through">56 лв</span> <span style="color:red;">27.99 лв</span></p>
+              <hr style="height: 5px;background: white;width: 85%;">
+            </section>
               <section>
-                  <h1 style="font-size: 35px;color: #f2c119;font-weight: bold;">Защо да ни се доверите:</h1>
-                  <h2>Поръчвайки сега вие не поемате никакъв риск, защото сме толкова сигурни, че ще харесате нашия продукт, че предлагаме 100% гаранция за връщане на парите. Ако по някаква причина не сте напълно удовлетворени от покупката си, просто ни уведомете в рамките на 60 дни и ние ще ви възстановим цялата сума.</h2>
-                  <img src="../../assets/images/kachestvo_.jpg" alt="">
+                <p style="color: #2c3e50;font-size: 20px;font-weight: bold;width: 90%;margin: 0 auto;margin-bottom:25px">
+                    Поръчвайки сега вие не поемате никакъв риск, защото сме толкова сигурни, че ще харесате нашия продукт, че предлагаме 100% гаранция за връщане на парите.
+                </p>
+                  <!-- <img src="../../assets/images/kachestvo_.jpg" alt=""> -->
   
                       <!-- three_box section -->
                   <div class="three_box" style="    margin-bottom: 80px;">
@@ -119,7 +129,7 @@
                           <div class="col-md-4">
                               <div class="gift_box">
                                   <i class="fa fa-check-circle-o" style="font-size: 50px;color: #f2c119" aria-hidden="true"></i>
-                                  <span>60 дни период за връщане - без риск</span>
+                                  <span>30 дни период за връщане - без риск</span>
                               </div>
                           </div>
                           <div class="col-md-4">
@@ -130,6 +140,7 @@
                           </div>
                           </div>
                       </div>
+                    <button @click="toggleSidebar()" style="display: block;margin: 0 auto;margin-top: 50px;" class="gf_button"> ПОРЪЧАЙ СЕГА!</button>
                   </div>
               </section>
     </section>
