@@ -21,9 +21,9 @@
                     </div>
                  </div>
               </div>
-              <section style="    background: rgb(251, 244, 233) !important;" class="flex first-section">
+              <section style="background: rgb(251, 244, 233) !important;" class="flex first-section">
                   <div class="wd-60">
-                      <h1 style="color: rgb(8, 83, 149);width: 90%;margin: 0 auto;">
+                      <h1 style="color: rgb(8, 83, 149);width: 90%;margin: 0 auto; margin-bottom: 2rem">
                         Въведете децата си в света на <b>програмирането</b> по един <b>лесен</b> и <b>увлекателен</b> начин
                        </h1>
                       <img src="../../assets/images/book-over-head.jpg" style="border-radius: 25px;" alt="">
@@ -38,11 +38,10 @@
                       </ul>
                   </div>
                   <div class="wd-50">
-                      <h1 style="color: rgb(8, 83, 149); font-family: cursive; font-weight: bold;">Програмиране за деца Забавление и обучение в едно!</h1>
+                      <h1 style="color: rgb(8, 83, 149); font-family: cursive; font-weight: bold;">Открийте магията на програмирането заедно с нас!!</h1>
                       <img style="border-radius: 170px;" src="../../assets/images/happy-little-girl-holding-a-book-mockup-at-the-library-a19273.jpg" alt=""/>
-                      <p style="font-size: 20px; margin-top: 2rem;"> Представете си света, където вашето дете не само използва технологиите, но и ги създава! <br> Нашата книга
-                         <b>"Младият програмист"</b> е ключът към това вълнуващо пътешествие.</p>
-              <hr style="height: 5px;background: white;width: 85%;">
+                      <p style="font-size: 20px; margin-top: 2rem;">С книгата <b>"МЛАДИЯТ ПРОГРАМИСТ"</b> вашето дете ще се потопи във вълшебния свят на уеб разработката.</p>
+                      <p style="font-size: 20px; margin-top: 2rem; color:white;     background: rgba(60, 145, 224, 0.84); border-radius: 5%;">Инвестирайте в бъдещето на детето си, поръчайте сега и открийте начин за развитие на неговите/нейните таланти в технологичната сфера!</p>
                       <section style="margin-top:50px;">
                         <p style="font-size: 35px; font-weight: bold;line-height: 32px;"><span STYLE="color:red;">50%</span> НАМАЛЕНИЕ</p>
                         <p style="font-size: 30px; font-weight: bold;line-height: 32px; margin-top: 10px;"><span style="text-decoration: line-through">56 лв</span> <span style="color:red;">27.99 лв</span></p>
@@ -61,7 +60,7 @@
                 <p style="color: white;font-size: 20px;font-weight: bold;width: 90%;margin: 0 auto;margin-top: 15px;">
                     Започнете още днес и наблюдавайте как вашето дете расте като малък програмист. Поръчайте книгата и се включете в нашите уроци.
                 </p>
-                  <button @click="toggleSidebar()" class="gf_button"> ПОРЪЧАЙ СЕГА!</button>
+                  <!-- <button @click="toggleSidebar()" class="gf_button"> ПОРЪЧАЙ СЕГА!</button> -->
               </section>
               <section class="flex" style="background: #fbf4e9!important; justify-content: space-evenly;padding: 35px 0">
                   <div>
@@ -78,7 +77,7 @@
                   </div>
               </section>
               <section style="background: #b7e449;padding: 30px;">
-              <h2 style="font-weight: bold; font-size: 30px; color: white;">Често задавани въпроси</h2>
+              <h2 style="font-weight: bold; font-size: 30px; color: #2C3E50;">Често задавани въпроси</h2>
               <div class="faq">
                   <button class="collapsible">За каква възраст е подходяща книгата?</button>
                   <div class="content" >
@@ -92,10 +91,6 @@
                   <div class="content" >
                   <p style="font-size: 20px;padding: 20px;">Ще научите основите на HTML, CSS и JavaScript, както и как да създавате свои собствени уеб страници.</p>
                   </div>
-                  <button class="collapsible">Има ли упражнения и проекти за практика?</button>
-                  <div class="content" >
-                  <p style="font-size: 20px;padding: 20px;">Да, книгата включва разнообразни упражнения и проекти, които позволяват на децата да приложат наученото на практика.</p>
-                  </div>
                   <button class="collapsible">Какви са предимствата на ученето на програмиране в ранна възраст?</button>
                   <div class="content" >
                   <p style="font-size: 20px;padding: 20px;">Ученето на програмиране в ранна възраст помага за развитието на логическото мислене, креативността и проблемното решаване, като същевременно подготвя децата за бъдещи кариерни възможности.</p>
@@ -106,19 +101,15 @@
                   </div>
               </div>
           </section>
-          <section style="padding: 20px; padding-bottom:0">
-              <p style="font-size: 35px; font-weight: bold;line-height: 32px;"><span STYLE="color:red;">50%</span> НАМАЛЕНИЕ</p>
-              <p style="font-size: 30px; font-weight: bold;line-height: 32px; margin-top: 10px;"><span style="text-decoration: line-through">56 лв</span> <span style="color:red;">27.99 лв</span></p>
-              <hr style="height: 5px;background: white;width: 85%;">
-            </section>
-              <section>
+              <section style="margin-top: 1rem;">
                 <p style="color: #2c3e50;font-size: 20px;font-weight: bold;width: 90%;margin: 0 auto;margin-bottom:25px">
                     Поръчвайки сега вие не поемате никакъв риск, защото сме толкова сигурни, че ще харесате нашия продукт, че предлагаме 100% гаранция за връщане на парите.
                 </p>
+                <button @click="toggleSidebar()" style="display: block;margin: 0 auto;margin-top: 1rem;" class="gf_button"> ПОРЪЧАЙ СЕГА!</button>
                   <!-- <img src="../../assets/images/kachestvo_.jpg" alt=""> -->
   
                       <!-- three_box section -->
-                  <div class="three_box" style="    margin-bottom: 80px;">
+                  <div class="three_box" style="margin-bottom: 2rem; margin-top: 2rem;">
                       <div class="container">
                           <div class="row">
                           <div class="col-md-4">
@@ -141,7 +132,6 @@
                           </div>
                           </div>
                       </div>
-                    <button @click="toggleSidebar()" style="display: block;margin: 0 auto;margin-top: 50px;" class="gf_button"> ПОРЪЧАЙ СЕГА!</button>
                   </div>
               </section>
     </section>
