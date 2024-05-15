@@ -37,17 +37,18 @@
                           <li style="display: flex;gap: 5px;margin-bottom: 10px;"><i style="font-size: 30px;margin-right: 6px;color: green;margin-left: 6px;" class="fa fa-check-circle-o" aria-hidden="true"></i><p style="font-size:18px;">Дава Ви свободно време като родители!</p></li>
                       </ul>
                   </div>
-              <hr style="height: 5px;background: white;width: 85%;">
                   <div class="wd-50">
                       <h1 style="color: rgb(8, 83, 149); font-family: cursive; font-weight: bold;">Програмиране за деца Забавление и обучение в едно!</h1>
                       <img style="border-radius: 170px;" src="../../assets/images/happy-little-girl-holding-a-book-mockup-at-the-library-a19273.jpg" alt=""/>
                       <p style="font-size: 20px; margin-top: 2rem;"> Представете си света, където вашето дете не само използва технологиите, но и ги създава! <br> Нашата книга
                          <b>"Младият програмист"</b> е ключът към това вълнуващо пътешествие.</p>
+              <hr style="height: 5px;background: white;width: 85%;">
                       <section style="margin-top:50px;">
                         <p style="font-size: 35px; font-weight: bold;line-height: 32px;"><span STYLE="color:red;">50%</span> НАМАЛЕНИЕ</p>
                         <p style="font-size: 30px; font-weight: bold;line-height: 32px; margin-top: 10px;"><span style="text-decoration: line-through">56 лв</span> <span style="color:red;">27.99 лв</span></p>
                       </section>
                       <button @click="toggleSidebar()" class="gf_button"> ПОРЪЧАЙ СЕГА!</button>
+              <hr style="height: 5px;background: white;width: 85%;">
                   </div>
               </section>
               <section style="background: #3c91e0d6!important; padding: 35px 0">
