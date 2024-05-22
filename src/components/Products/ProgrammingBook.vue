@@ -161,7 +161,7 @@
       methods:{
           toggleSidebar() {
           window.fbq('track', 'AddToCart')
-           this.emitter.emit("toggle-sidebar", {title: 'Книга "Младият програмист"', quantity: 1, price: 27.99, image: 'Pens-thumbnail.png'});
+           this.emitter.emit("toggle-sidebar", {title: 'Книга "Младият програмист"', quantity: 1, price: 27.99, image: 'book-cover-programmer.png'});
       }
       }
   }
